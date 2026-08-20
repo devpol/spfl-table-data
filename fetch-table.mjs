@@ -4,23 +4,27 @@ async function updateTable() {
   const apiKey = process.env.FOOTBALL_API_KEY;
 
   if (!apiKey) {
-    console.error('Error: FOOTBALL_API_KEY is not defined.');
+    console.error('Error: FOOTBALL_API_KEY secret is missing or empty.');
     process.exit(1);
   }
 
-  // League 179 = Scottish Premiership, Season = current year (e.g., 2026)
-  // Forcing the 2025 season to guarantee a fully populated table for UI testing
-  const url = `https://v3.football.api-sports.io/standings?league=179&season=2026`;
+  // Using 2025 season for test verification
+  const url = 'https://v3.football.api-sports.io/standings?league=179&season=2025';
 
   try {
     const res = await fetch(url, {
-      headers: { 'x-apisports-key': apiKey }
+      method: 'GET',
+      headers: {
+        'x-apisports-key': apiKey.trim()
+      }
     });
 
+    console.log(`HTTP Status: ${res.status} ${res.statusText}`);
     const data = await res.json();
+    console.log('Full API Response:', JSON.stringify(data, null, 2));
+
     const rawStandings = data?.response?.[0]?.league?.standings?.[0] || [];
 
-    // Format into a clean, lightweight array
     const formattedStandings = rawStandings.map(item => ({
       rank: item.rank,
       team: item.team.name,
@@ -35,7 +39,7 @@ async function updateTable() {
     }));
 
     fs.writeFileSync('standings.json', JSON.stringify(formattedStandings, null, 2));
-    console.log('Successfully updated standings.json');
+    console.log(`Saved standings.json with ${formattedStandings.length} teams.`);
   } catch (err) {
     console.error('Fetch error:', err);
     process.exit(1);
