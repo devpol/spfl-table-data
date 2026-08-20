@@ -1,10 +1,8 @@
 import fs from 'fs';
 
 async function updateTable() {
-  // We are completely dropping the API-Football key. 
-  // Switching to TheSportsDB open community endpoint.
-  // League 4330 = Scottish Premiership
-  const url = 'https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4330&s=2025-2026';
+  //  TheSportsDB open community endpoint - League 4330 = Scottish Premiership
+  const url = 'https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4330&s=2026-2027';
 
   try {
     const res = await fetch(url);
@@ -17,7 +15,7 @@ async function updateTable() {
         process.exit(1);
     }
 
-    // Mapping TheSportsDB schema to perfectly match your Framer React component
+    // Mapping TheSportsDB schema to perfectly match the Framer React component
     const formattedStandings = data.table.map(item => ({
       rank: parseInt(item.intRank),
       name: item.strTeam,
