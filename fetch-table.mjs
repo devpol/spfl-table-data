@@ -9,8 +9,8 @@ async function updateTable() {
   }
 
   // League 179 = Scottish Premiership, Season = current year (e.g., 2026)
-  const currentYear = new Date().getFullYear();
-  const url = `https://v3.football.api-sports.io/standings?league=179&season=${currentYear}`;
+  // Forcing the 2025 season to guarantee a fully populated table for UI testing
+  const url = `https://v3.football.api-sports.io/standings?league=179&season=2026`;
 
   try {
     const res = await fetch(url, {
