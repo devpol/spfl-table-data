@@ -1,57 +1,57 @@
 [
   {
     "rank": 1,
-    "name": "Heart of Midlothian",
-    "played": 33,
-    "won": 21,
-    "drawn": 7,
-    "lost": 5,
-    "gd": 30,
-    "points": 70,
-    "form": "LWDWW"
+    "name": "Celtic",
+    "played": 2,
+    "won": 2,
+    "drawn": 0,
+    "lost": 0,
+    "gd": 5,
+    "points": 6,
+    "form": "WW"
   },
   {
     "rank": 2,
-    "name": "Rangers",
-    "played": 33,
-    "won": 19,
-    "drawn": 12,
-    "lost": 2,
-    "gd": 35,
-    "points": 69,
-    "form": "WLLLL"
+    "name": "St Mirren",
+    "played": 2,
+    "won": 2,
+    "drawn": 0,
+    "lost": 0,
+    "gd": 3,
+    "points": 6,
+    "form": "WW"
   },
   {
     "rank": 3,
-    "name": "Celtic",
-    "played": 33,
-    "won": 21,
-    "drawn": 4,
-    "lost": 8,
-    "gd": 24,
-    "points": 67,
-    "form": "WWWWW"
+    "name": "Motherwell",
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "gd": 1,
+    "points": 4,
+    "form": "DW"
   },
   {
     "rank": 4,
-    "name": "Motherwell",
-    "played": 33,
-    "won": 14,
-    "drawn": 12,
-    "lost": 7,
-    "gd": 23,
-    "points": 54,
-    "form": "WLDLW"
+    "name": "Heart of Midlothian",
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "gd": 3,
+    "points": 3,
+    "form": "WL"
   },
   {
     "rank": 5,
-    "name": "Hibernian",
-    "played": 33,
-    "won": 13,
-    "drawn": 12,
-    "lost": 8,
-    "gd": 14,
-    "points": 51,
-    "form": "LWWLL"
+    "name": "Dundee",
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "gd": 1,
+    "points": 3,
+    "form": "WL"
   }
 ]
