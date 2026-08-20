@@ -9,7 +9,7 @@ async function updateTable() {
   }
 
   // Using 2025 season for test verification
-  const url = 'https://v3.football.api-sports.io/standings?league=179&season=2025';
+  const url = 'https://v3.football.api-sports.io/standings?league=179&season=2024';
 
   try {
     const res = await fetch(url, {
