@@ -1,41 +1,34 @@
 import fs from 'fs';
 
 async function updateTable() {
-  const apiKey = process.env.FOOTBALL_API_KEY;
-
-  if (!apiKey) {
-    console.error('Error: FOOTBALL_API_KEY secret is missing or empty.');
-    process.exit(1);
-  }
-
-  // Using 2025 season for test verification
-  const url = 'https://v3.football.api-sports.io/standings?league=179&season=2024';
+  // We are completely dropping the API-Football key. 
+  // Switching to TheSportsDB open community endpoint.
+  // League 4330 = Scottish Premiership
+  const url = 'https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4330&s=2025-2026';
 
   try {
-    const res = await fetch(url, {
-      method: 'GET',
-      headers: {
-        'x-apisports-key': apiKey.trim()
-      }
-    });
-
+    const res = await fetch(url);
     console.log(`HTTP Status: ${res.status} ${res.statusText}`);
+    
     const data = await res.json();
-    console.log('Full API Response:', JSON.stringify(data, null, 2));
+    
+    if (!data.table) {
+        console.log("No table data found. API Response:", JSON.stringify(data));
+        process.exit(1);
+    }
 
-    const rawStandings = data?.response?.[0]?.league?.standings?.[0] || [];
-
-    const formattedStandings = rawStandings.map(item => ({
-      rank: item.rank,
-      team: item.team.name,
-      logo: item.team.logo,
-      played: item.all.played,
-      won: item.all.win,
-      drawn: item.all.draw,
-      lost: item.all.lose,
-      gd: item.goalsDiff,
-      points: item.points,
-      form: item.form
+    // Mapping TheSportsDB schema to perfectly match your Framer React component
+    const formattedStandings = data.table.map(item => ({
+      rank: parseInt(item.intRank),
+      name: item.strTeam,
+      logo: item.strTeamBadge,
+      played: parseInt(item.intPlayed),
+      won: parseInt(item.intWin),
+      drawn: parseInt(item.intDraw),
+      lost: parseInt(item.intLoss),
+      gd: parseInt(item.intGoalDifference),
+      points: parseInt(item.intPoints),
+      form: item.strForm || ""
     }));
 
     fs.writeFileSync('standings.json', JSON.stringify(formattedStandings, null, 2));
