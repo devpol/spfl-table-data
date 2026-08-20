@@ -2,7 +2,7 @@ import fs from 'fs';
 
 async function updateTable() {
   //  TheSportsDB open community endpoint.  League 4330 = Scottish Premiership, change year per season..
-  const url = 'https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4330&s=2025-2026';
+  const url = 'https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4330&s=2026-2027';
 
   try {
     const res = await fetch(url);
