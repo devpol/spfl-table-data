@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: main # This prevents the detached HEAD state
+          ref: main
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
