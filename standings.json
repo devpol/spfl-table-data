@@ -12,6 +12,17 @@
   },
   {
     "rank": 2,
+    "name": "Dundee",
+    "played": 3,
+    "won": 2,
+    "drawn": 0,
+    "lost": 1,
+    "gd": 3,
+    "points": 6,
+    "form": "WWL"
+  },
+  {
+    "rank": 3,
     "name": "St Mirren",
     "played": 2,
     "won": 2,
@@ -22,7 +33,7 @@
     "form": "WW"
   },
   {
-    "rank": 3,
+    "rank": 4,
     "name": "Motherwell",
     "played": 2,
     "won": 1,
@@ -33,24 +44,13 @@
     "form": "DW"
   },
   {
-    "rank": 4,
+    "rank": 5,
     "name": "Heart of Midlothian",
     "played": 2,
     "won": 1,
     "drawn": 0,
     "lost": 1,
     "gd": 3,
-    "points": 3,
-    "form": "WL"
-  },
-  {
-    "rank": 5,
-    "name": "Dundee",
-    "played": 2,
-    "won": 1,
-    "drawn": 0,
-    "lost": 1,
-    "gd": 1,
     "points": 3,
     "form": "WL"
   }
