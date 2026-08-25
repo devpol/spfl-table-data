@@ -2,7 +2,7 @@ import fs from 'fs';
 
 async function updateTable() {
   // ESPN's undocumented free tier for the Scottish Premiership (sco.1)
-  const url = 'https://site.api.espn.com/apis/v2/sports/soccer/sco.1/standings?season=2025';
+  const url = 'https://site.api.espn.com/apis/v2/sports/soccer/sco.1/standings?season=2026';
 
   try {
     const res = await fetch(url);
