@@ -2,7 +2,7 @@ import fs from 'fs';
 
 async function updateTable() {
   // ESPN's undocumented free tier for the Scottish Premiership (sco.1)
-  const url = 'https://site.api.espn.com/apis/v2/sports/soccer/sco.1/standings';
+  const url = 'https://site.api.espn.com/apis/v2/sports/soccer/sco.1/standings?season=2025';
 
   try {
     const res = await fetch(url);
@@ -10,7 +10,7 @@ async function updateTable() {
     
     const data = await res.json();
     
-    // ESPN nests the actual table array deeply inside their response
+    // ESPN nests the table array deeply inside their response
     const entries = data?.children?.[0]?.standings?.entries;
 
     if (!entries) {
@@ -24,9 +24,9 @@ async function updateTable() {
         return stat ? parseInt(stat.value) : 0;
     };
 
-    // Map the ESPN schema to perfectly match your Framer React component
+    // Map the ESPN schema to match Framer React component
     const formattedStandings = entries.map((item, index) => {
-      // ESPN sometimes labels goal difference differently, so we check both
+      // ESPN labels goal difference differently, so we check both
       const gd = getStat(item.stats, 'pointDifferential') || getStat(item.stats, 'goalDifference');
       
       return {
