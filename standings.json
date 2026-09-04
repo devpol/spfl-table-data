@@ -25,6 +25,18 @@
   },
   {
     "rank": 3,
+    "name": "Heart of Midlothian",
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
+    "played": 4,
+    "won": 3,
+    "drawn": 0,
+    "lost": 1,
+    "gd": 6,
+    "points": 9,
+    "form": ""
+  },
+  {
+    "rank": 4,
     "name": "Motherwell",
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/266.png",
     "played": 4,
@@ -36,7 +48,7 @@
     "form": ""
   },
   {
-    "rank": 4,
+    "rank": 5,
     "name": "Dundee",
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/261.png",
     "played": 5,
@@ -48,7 +60,7 @@
     "form": ""
   },
   {
-    "rank": 5,
+    "rank": 6,
     "name": "Rangers",
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/257.png",
     "played": 4,
@@ -60,26 +72,14 @@
     "form": ""
   },
   {
-    "rank": 6,
-    "name": "Heart of Midlothian",
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/262.png",
-    "played": 3,
-    "won": 2,
-    "drawn": 0,
-    "lost": 1,
-    "gd": 4,
-    "points": 6,
-    "form": ""
-  },
-  {
     "rank": 7,
     "name": "Hibernian",
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png",
-    "played": 3,
+    "played": 4,
     "won": 2,
     "drawn": 0,
-    "lost": 1,
-    "gd": 1,
+    "lost": 2,
+    "gd": -1,
     "points": 6,
     "form": ""
   },
