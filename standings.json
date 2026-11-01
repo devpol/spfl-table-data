@@ -3,11 +3,11 @@
     "rank": 1,
     "name": "Celtic",
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/256.png",
-    "played": 11,
+    "played": 12,
     "won": 9,
     "drawn": 1,
-    "lost": 1,
-    "gd": 19,
+    "lost": 2,
+    "gd": 17,
     "points": 28,
     "form": ""
   },
@@ -37,6 +37,18 @@
   },
   {
     "rank": 4,
+    "name": "Falkirk",
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
+    "played": 12,
+    "won": 5,
+    "drawn": 3,
+    "lost": 4,
+    "gd": 3,
+    "points": 18,
+    "form": ""
+  },
+  {
+    "rank": 5,
     "name": "Dundee",
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/261.png",
     "played": 11,
@@ -48,7 +60,7 @@
     "form": ""
   },
   {
-    "rank": 5,
+    "rank": 6,
     "name": "Dundee United",
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/264.png",
     "played": 11,
@@ -57,18 +69,6 @@
     "lost": 3,
     "gd": 0,
     "points": 16,
-    "form": ""
-  },
-  {
-    "rank": 6,
-    "name": "Falkirk",
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/254.png",
-    "played": 11,
-    "won": 4,
-    "drawn": 3,
-    "lost": 4,
-    "gd": 1,
-    "points": 15,
     "form": ""
   },
   {
