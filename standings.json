@@ -109,18 +109,30 @@
   },
   {
     "rank": 10,
-    "name": "Aberdeen",
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png",
-    "played": 11,
+    "name": "Hibernian",
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png",
+    "played": 12,
     "won": 3,
     "drawn": 2,
-    "lost": 6,
+    "lost": 7,
     "gd": -2,
     "points": 11,
     "form": ""
   },
   {
     "rank": 11,
+    "name": "Aberdeen",
+    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/263.png",
+    "played": 12,
+    "won": 3,
+    "drawn": 2,
+    "lost": 7,
+    "gd": -6,
+    "points": 11,
+    "form": ""
+  },
+  {
+    "rank": 12,
     "name": "Kilmarnock",
     "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/260.png",
     "played": 12,
@@ -129,18 +141,6 @@
     "lost": 7,
     "gd": -15,
     "points": 9,
-    "form": ""
-  },
-  {
-    "rank": 12,
-    "name": "Hibernian",
-    "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/258.png",
-    "played": 11,
-    "won": 2,
-    "drawn": 2,
-    "lost": 7,
-    "gd": -6,
-    "points": 8,
     "form": ""
   }
 ]
